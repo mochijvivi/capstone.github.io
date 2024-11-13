@@ -9,7 +9,12 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play capstone1.2.</tw-noscript></noscript></tw-story>
-<tw-storydata name="capstone1.2" startnode="1" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="C431DDE7-A7E1-41D1-8870-33795C0A0DE9" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Landing Page" tags="" position="600,300" size="100,100">[[Prologue]]</tw-passagedata><tw-passagedata pid="2" name="Prologue" tags="" position="725,300" size="100,100">The silence lays thick as you approach the rusted gates of the kingdom. Vines covered the now worn stone walls, adorned with flowers. What was once a thriving and bustling kingdom now sat in silence, [[as if frozen in time.]]</tw-passagedata><tw-passagedata pid="3" name="as if frozen in time." tags="" position="850,300" size="100,100">Your horse neighs loudly, as if opposing your choice to pass the gates, but you steady it. 
+<tw-storydata name="capstone1.2" startnode="1" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="C431DDE7-A7E1-41D1-8870-33795C0A0DE9" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Landing Page" tags="" position="600,300" size="100,100">[[Prologue]]</tw-passagedata><tw-passagedata pid="2" name="Prologue" tags="" position="725,300" size="100,100">The silence lays thick as you approach the rusted gates of the kingdom. Vines covered the now worn stone walls, adorned with flowers. What was once a thriving and bustling kingdom now sat in silence, [[as if frozen in time.]]
+
+
+(set:$empath to 0)
+(set:$brute to 0)
+(set:$knowledge to 0)</tw-passagedata><tw-passagedata pid="3" name="as if frozen in time." tags="" position="850,300" size="100,100">Your horse neighs loudly, as if opposing your choice to pass the gates, but you steady it. 
 
 &quot;We&#39;ve come this far, we can&#39;t turn back now.&quot;
 
@@ -53,20 +58,56 @@ Hand and frame looms and tablet weaving cards were stored behind the counter--th
 [[The Schoolhouse]]
 [[The Blacksmith&#39;s Workshop]]
 
-(after visiting all locations make this appear-&gt; [[The gates of the castle stood tall, slightly opened.]]</tw-passagedata><tw-passagedata pid="12" name="The Village Chapel" tags="" position="1500,300" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="The Schoolhouse" tags="" position="1500,175" size="100,100"></tw-passagedata><tw-passagedata pid="14" name="The Blacksmith&#39;s Workshop" tags="" position="1500,425" size="100,100"></tw-passagedata><tw-passagedata pid="15" name="The gates of the castle stood tall, slightly opened." tags="" position="1650,300" size="100,100">The path to the castle doors were overgrown with dense foliage, making it difficult to walk. Some trees had markings, maybe by villagers or soldiers before they fell asleep. Four soldiers were asleep on the ground by the door, their armors rusted over the years. [[Only sounds of the leaves and sticks crunching under your feet could be heard.]]</tw-passagedata><tw-passagedata pid="16" name="Only sounds of the leaves and sticks crunching under your feet could be heard." tags="" position="1775,300" size="100,100">The doors creak loudly as you pry it open some more. Darkness filled the halls, the only light coming through the holes of the curtains by the windows. 
+(after visiting all locations make this appear-&gt; [[The gates of the castle stood tall, slightly opened.]]</tw-passagedata><tw-passagedata pid="12" name="The Village Chapel" tags="" position="1500,300" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="The Schoolhouse" tags="" position="1500,175" size="100,100">Where the village children spent their days. On the teacher&#39;s desk, you find a riddle book used by students. 
+
+[[Take it. (set:$knowledge to it +1) -&gt;The people&#39;s feelings of fear still stood present, even after years of sleep.]]
+[[Leave it -&gt; -&gt;The people&#39;s feelings of fear still stood present, even after years of sleep.]]</tw-passagedata><tw-passagedata pid="14" name="The Blacksmith&#39;s Workshop" tags="" position="1500,425" size="100,100">Shelves of weapons lined the walls.
+
+[[Take the iron dagger. (set:$brute to it +1)-&gt;The people&#39;s feelings of fear still stood present, even after years of sleep.]]
+[[Take the bracers. (set:$brute to it +1)-&gt;The people&#39;s feelings of fear still stood present, even after years of sleep.]]
+[[Take both. (set:$brute to it +2)-&gt;The people&#39;s feelings of fear still stood present, even after years of sleep.]]
+[[Leave it.-&gt;The people&#39;s feelings of fear still stood present, even after years of sleep.]]</tw-passagedata><tw-passagedata pid="15" name="The gates of the castle stood tall, slightly opened." tags="" position="1650,300" size="100,100">The path to the castle doors were overgrown with dense foliage, making it difficult to walk. Some trees had markings, maybe by villagers or soldiers before they fell asleep. Four soldiers were asleep on the ground by the door, their armors rusted over the years. [[Only sounds of the leaves and sticks crunching under your feet could be heard.]]</tw-passagedata><tw-passagedata pid="16" name="Only sounds of the leaves and sticks crunching under your feet could be heard." tags="" position="1775,300" size="100,100">The doors creak loudly as you pry it open some more. Darkness filled the halls, the only light coming through the holes of the curtains by the windows. 
 
 [[East Wing]]
 [[West Wing]]
 [[South Wing]] (maybe not show until after east and west wing?)</tw-passagedata><tw-passagedata pid="17" name="East Wing" tags="" position="1900,75" size="100,100">[[Library]]
 [[Throne Room]]</tw-passagedata><tw-passagedata pid="18" name="West Wing" tags="" position="1900,300" size="100,100">[[Queen&#39;s Tower Room]]
 [[Banquet Hall]]</tw-passagedata><tw-passagedata pid="19" name="South Wing" tags="" position="1900,525" size="100,100">[[Nursery]]
-[[Staircase]]</tw-passagedata><tw-passagedata pid="20" name="Nursery" tags="" position="2025,500" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="Staircase" tags="" position="2025,625" size="100,100">A dark staircase that seemed to lead up a tower. Spiders made home on the ceiling and crevices, little bugs crawled around. As the walkspace narrowed, [[you could see the faint floral patterns etched into the wall. ]]
-</tw-passagedata><tw-passagedata pid="22" name="Library" tags="" position="2025,0" size="100,100"></tw-passagedata><tw-passagedata pid="23" name="Throne Room" tags="" position="2025,125" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Queen&#39;s Tower Room" tags="" position="2025,250" size="100,100"></tw-passagedata><tw-passagedata pid="25" name="Banquet Hall" tags="" position="2025,375" size="100,100"></tw-passagedata><tw-passagedata pid="26" name="you could see the faint floral patterns etched into the wall. " tags="" position="2150,625" size="100,100">Halfway up, the scent of wilted rose and old perfume starts to overwhelm your nose--a membrance of the royalty that once filled these halls. Through the small windows, the light shone through the vines and thorns that had creeped inside, the shadows dancing, [[almost as if the vines were alive.]]
+[[Staircase]]</tw-passagedata><tw-passagedata pid="20" name="Nursery" tags="" position="2025,500" size="100,100">The princess&#39;s old nursery, filled with memories of her childhood.
+
+[[A stuffed toy bear. (set:$empath to it +1)-&gt;South Wing]]
+[[A music box. (set:$empath to it +1)-&gt;South Wing]]
+[[Take both. (set:$empath to it +2)-&gt;South Wing]]</tw-passagedata><tw-passagedata pid="21" name="Staircase" tags="" position="2025,625" size="100,100">A dark staircase that seemed to lead up a tower. Spiders made home on the ceiling and crevices, little bugs crawled around. As the walkspace narrowed, [[you could see the faint floral patterns etched into the wall. ]]
+</tw-passagedata><tw-passagedata pid="22" name="Library" tags="" position="2025,0" size="100,100">You find a grimoire.
+
+[[Take it. (set:$knowledge to it +1)-&gt;East Wing]] 
+[[Leave it.-&gt;East Wing]]</tw-passagedata><tw-passagedata pid="23" name="Throne Room" tags="" position="2025,125" size="100,100">The empty throne room.
+
+No items here.
+[[East Wing]]</tw-passagedata><tw-passagedata pid="24" name="Queen&#39;s Tower Room" tags="" position="2025,250" size="100,100">In the queen&#39;s room, you search through her trunk of memories.
+[[A hand-held mirror. (set:$knowledge to it+1)-&gt;West Wing]]
+[[A tear-stained diary. (set:$empath to it +1)-&gt;West Wing]]
+</tw-passagedata><tw-passagedata pid="25" name="Banquet Hall" tags="" position="2025,375" size="100,100">The banquet hall, the food from the years still left untouched. Amongst the grayed room, you find a golden chalice by the king&#39;s seat.
+
+[[Take it. (set:$brute to it +1)-&gt;West Wing]]
+[[Leave it.-&gt;West Wing]]</tw-passagedata><tw-passagedata pid="26" name="you could see the faint floral patterns etched into the wall. " tags="" position="2150,625" size="100,100">Halfway up, the scent of wilted rose and old perfume starts to overwhelm your nose--a membrance of the royalty that once filled these halls. Through the small windows, the light shone through the vines and thorns that had creeped inside, the shadows dancing, [[almost as if the vines were alive.]]
 </tw-passagedata><tw-passagedata pid="27" name="almost as if the vines were alive." tags="" position="2275,625" size="100,100">As the you near the top, the staircase widens slightly and a grand archway comes into view. As the moon rises, the moonlight lights up the mini pavillion that stood before you.  A wooden door across the archway draws your attention. [[A feeling of hope and excitement starts to bubble inside you.]]</tw-passagedata><tw-passagedata pid="28" name="A feeling of hope and excitement starts to bubble inside you." tags="" position="2400,625" size="100,100">Carefully, you take a step forward into the thick vines covering the ground. But as you raise your foot for your next step, a vine whips across you, blocking your route. 
 
 Looking around, there didn&#39;t seem to be anyone or anything in the room with you. Again you raise your foot to step forward, but another whips across, landing on top. 
 
-[[//Almost as if building a wall.//]]</tw-passagedata><tw-passagedata pid="29" name="//Almost as if building a wall.//" tags="" position="2525,625" size="100,100"></tw-passagedata></tw-storydata>
+[[//Almost as if building a wall.//]]</tw-passagedata><tw-passagedata pid="29" name="//Almost as if building a wall.//" tags="" position="2525,625" size="100,100">Going through your inventory:
+
+[[The iron dagger]]
+[[The apothecary&#39;s talisman]]
+[[The Blacksmith&#39;s bracers]](set:$brute to 1)</tw-passagedata><tw-passagedata pid="30" name="Empath" tags="" position="3100,100" size="100,100"></tw-passagedata><tw-passagedata pid="31" name="Brute" tags="" position="3100,225" size="100,100"></tw-passagedata><tw-passagedata pid="32" name="Knowledge" tags="" position="3100,350" size="100,100"></tw-passagedata><tw-passagedata pid="33" name="The iron dagger" tags="" position="2650,600" size="100,100">(set:$brute to ($brute + 1))
+
+With the small iron dagger, you cut through the thick vines. As you progress, the more vines appear in front of you, but the ones you cut don&#39;t seem to be regenerating. </tw-passagedata><tw-passagedata pid="34" name="The apothecary&#39;s talisman" tags="" position="2650,475" size="100,100">(set:$knowledge to ($knowledge +1))
+
+Brushing through the apothecary&#39;s journal, you find a talisman. 
+
+//&quot;I found a talisman used by the old ladies. She said it would help with my overgrown plants.&quot;//
+
+You place the talisman at the root of the vines, but nothing happens. You raise your foot again and </tw-passagedata><tw-passagedata pid="35" name="The Blacksmith&#39;s bracers" tags="" position="2650,725" size="100,100">(set:$brute to ($brute + 1))</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
