@@ -27,4 +27,5 @@ p {
     font-family: 'Courier New', Courier, monospace;
     font-size: 36px;
     text-align: center;
+    position: relative;
 }
