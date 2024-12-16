@@ -3,10 +3,17 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: contain;
+    background-size: 100%;
 }
 
 img {
-    position: contain center;
+    background-image: url("title2.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
 }
 
 
