@@ -1,7 +1,7 @@
 body {
     background-image: url('title.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: contain;
 }
 
 
