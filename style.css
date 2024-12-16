@@ -5,10 +5,8 @@ body {
     background-size: contain;
 }
 
-div {
-    position: contain;
-    width: 2388px;
-    height: 1668px;
+img {
+    position: contain center;
 }
 
 
