@@ -1,14 +1,12 @@
 body {
     background-image: url('title.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
-
-    font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
-
+    background-size: auto;
 }
 
 a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
     position: relative;
     top: 70px;
     align-items: center;
