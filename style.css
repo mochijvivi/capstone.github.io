@@ -1,5 +1,16 @@
 body {
     background-image: url('title.jpg');
     background-repeat: no-repeat;
-    
+    background-size: contain;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+
 }
+
+a {
+    position: relative;
+    top: 70px;
+    align-items: center;
+}
+
