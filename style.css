@@ -5,6 +5,12 @@ body {
     background-size: contain;
 }
 
+div {
+    position: contain;
+    width: 2388px;
+    height: 1668px;
+}
+
 
 p {
     font-family: 'Courier New', Courier, monospace;
