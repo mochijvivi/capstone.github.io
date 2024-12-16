@@ -1,11 +1,43 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+.container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+}
+
+
+
+/**body {
     background-color: black;
     height: 100%; overflow: hidden;
     
 }
 
 img {
-    background-image: url("title2.png");
+    
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,16 +50,17 @@ img {
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: cover;
 
 
 }
 
 
 p {
+    color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 36px;
     text-align: center;
     position: absolute;
     top: 0;
-}
+}**/
