@@ -1,6 +1,7 @@
 body {
     background-color: black;
     height: 100%; overflow: hidden;
+    object-position: 50% 50%;
 }
 
 img {
