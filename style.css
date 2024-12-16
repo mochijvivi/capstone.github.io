@@ -1,15 +1,23 @@
 body {
     background-color: black;
     height: 100%; overflow: hidden;
-    object-position: 50% 50%;
+    
 }
 
 img {
     background-image: url("title2.png");
     height: 100%;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /**
+    background-image: url("title2.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
 
 
 }
