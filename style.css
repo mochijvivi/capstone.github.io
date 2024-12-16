@@ -5,3 +5,16 @@ body {
 }
 
 
+a:link {
+    color: white;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: blue;
+}
+
+a {
+    font-size: 34px;
+}
